@@ -218,12 +218,14 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 function removeItem(myGroceryList, item){
 
 
-  if(!myGroceryList){
-    return myGroceryList;
+  if(myGroceryList == undefined){
+    let empty =[];
+    return empty;
   }
 
-  if(item == false){
-    return myGroceryList;
+  if(item == undefined){
+    let empty =[];
+    return empty;
   }
 
 
@@ -240,7 +242,7 @@ function removeItem(myGroceryList, item){
 function addItem(myGroceryList, item){
   let empArray = [];
 
-  if(myGroceryList == false || item == false){
+  if(myGroceryList == undefined || item == undefined){
     return empArray;
   }
 
