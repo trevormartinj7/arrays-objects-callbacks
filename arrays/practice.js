@@ -98,7 +98,7 @@ function evenFinder(nums){
 
   let evenarray = [];
 
-  for(i = 0; i < nums.length; i++){
+  for(let i = 0; i < nums.length; i++){
 
     if(nums[i]%2 === 0){
       evenarray.push(nums[i]);
